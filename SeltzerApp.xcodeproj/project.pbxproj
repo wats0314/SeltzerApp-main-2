@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		638F28922A33A28100A8333D /* SeltzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F28912A33A28100A8333D /* SeltzerApp.swift */; };
+		638F28942A33A28100A8333D /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F28932A33A28100A8333D /* RatingView.swift */; };
+		638F28962A33A28200A8333D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638F28952A33A28200A8333D /* Assets.xcassets */; };
+		638F28992A33A28200A8333D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638F28982A33A28200A8333D /* Preview Assets.xcassets */; };
+		638F28A32A33A28200A8333D /* SeltzerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F28A22A33A28200A8333D /* SeltzerAppTests.swift */; };
+		638F28AD2A33A28200A8333D /* SeltzerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F28AC2A33A28200A8333D /* SeltzerAppUITests.swift */; };
+		638F28AF2A33A28200A8333D /* SeltzerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F28AE2A33A28200A8333D /* SeltzerAppUITestsLaunchTests.swift */; };
+		638F28C12A33A3B900A8333D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F28C02A33A3B900A8333D /* User.swift */; };
+		638F28C32A33A3CD00A8333D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F28C22A33A3CD00A8333D /* UserModel.swift */; };
+		638F28C72A33A46B00A8333D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F28C62A33A46B00A8333D /* LoginView.swift */; };
+		638F28CA2A33A75600A8333D /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 638F28C92A33A75600A8333D /* data.json */; };
+		638F28D12A340A8B00A8333D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 638F28D02A340A8B00A8333D /* FirebaseFirestore */; };
+		638F28D42A340ABF00A8333D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 638F28D32A340ABF00A8333D /* FirebaseAuth */; };
+		638F28D62A340B3400A8333D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 638F28D52A340B3400A8333D /* GoogleService-Info.plist */; };
+		638F28DA2A356F0F00A8333D /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F28D92A356F0F00A8333D /* SliderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		638F289F2A33A28200A8333D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 638F28862A33A28100A8333D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 638F288D2A33A28100A8333D;
+			remoteInfo = SeltzerApp;
+		};
+		638F28A92A33A28200A8333D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 638F28862A33A28100A8333D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 638F288D2A33A28100A8333D;
+			remoteInfo = SeltzerApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		638F288E2A33A28100A8333D /* SeltzerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeltzerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		638F28912A33A28100A8333D /* SeltzerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeltzerApp.swift; sourceTree = "<group>"; };
+		638F28932A33A28100A8333D /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		638F28952A33A28200A8333D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		638F28982A33A28200A8333D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		638F289E2A33A28200A8333D /* SeltzerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeltzerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		638F28A22A33A28200A8333D /* SeltzerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeltzerAppTests.swift; sourceTree = "<group>"; };
+		638F28A82A33A28200A8333D /* SeltzerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeltzerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		638F28AC2A33A28200A8333D /* SeltzerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeltzerAppUITests.swift; sourceTree = "<group>"; };
+		638F28AE2A33A28200A8333D /* SeltzerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeltzerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		638F28C02A33A3B900A8333D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		638F28C22A33A3CD00A8333D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		638F28C62A33A46B00A8333D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		638F28C92A33A75600A8333D /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		638F28D52A340B3400A8333D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		638F28D92A356F0F00A8333D /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		638F288B2A33A28100A8333D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638F28D12A340A8B00A8333D /* FirebaseFirestore in Frameworks */,
+				638F28D42A340ABF00A8333D /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638F289B2A33A28200A8333D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638F28A52A33A28200A8333D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		638F28852A33A28100A8333D = {
+			isa = PBXGroup;
+			children = (
+				638F28902A33A28100A8333D /* SeltzerApp */,
+				638F28A12A33A28200A8333D /* SeltzerAppTests */,
+				638F28AB2A33A28200A8333D /* SeltzerAppUITests */,
+				638F288F2A33A28100A8333D /* Products */,
+				638F28D22A340ABF00A8333D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		638F288F2A33A28100A8333D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				638F288E2A33A28100A8333D /* SeltzerApp.app */,
+				638F289E2A33A28200A8333D /* SeltzerAppTests.xctest */,
+				638F28A82A33A28200A8333D /* SeltzerAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		638F28902A33A28100A8333D /* SeltzerApp */ = {
+			isa = PBXGroup;
+			children = (
+				638F28BD2A33A2D000A8333D /* Models */,
+				638F28BC2A33A2C400A8333D /* ViewModels */,
+				638F28BB2A33A2BE00A8333D /* Views */,
+				638F28952A33A28200A8333D /* Assets.xcassets */,
+				638F28D52A340B3400A8333D /* GoogleService-Info.plist */,
+				638F28972A33A28200A8333D /* Preview Content */,
+			);
+			path = SeltzerApp;
+			sourceTree = "<group>";
+		};
+		638F28972A33A28200A8333D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				638F28982A33A28200A8333D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		638F28A12A33A28200A8333D /* SeltzerAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				638F28A22A33A28200A8333D /* SeltzerAppTests.swift */,
+			);
+			path = SeltzerAppTests;
+			sourceTree = "<group>";
+		};
+		638F28AB2A33A28200A8333D /* SeltzerAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				638F28AC2A33A28200A8333D /* SeltzerAppUITests.swift */,
+				638F28AE2A33A28200A8333D /* SeltzerAppUITestsLaunchTests.swift */,
+			);
+			path = SeltzerAppUITests;
+			sourceTree = "<group>";
+		};
+		638F28BB2A33A2BE00A8333D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				638F28912A33A28100A8333D /* SeltzerApp.swift */,
+				638F28932A33A28100A8333D /* RatingView.swift */,
+				638F28C62A33A46B00A8333D /* LoginView.swift */,
+				638F28D92A356F0F00A8333D /* SliderView.swift */,
+				638F28C82A33A74A00A8333D /* Data */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		638F28BC2A33A2C400A8333D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				638F28C22A33A3CD00A8333D /* UserModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		638F28BD2A33A2D000A8333D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				638F28C02A33A3B900A8333D /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		638F28C82A33A74A00A8333D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				638F28C92A33A75600A8333D /* data.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		638F28D22A340ABF00A8333D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		638F288D2A33A28100A8333D /* SeltzerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 638F28B22A33A28200A8333D /* Build configuration list for PBXNativeTarget "SeltzerApp" */;
+			buildPhases = (
+				638F288A2A33A28100A8333D /* Sources */,
+				638F288B2A33A28100A8333D /* Frameworks */,
+				638F288C2A33A28100A8333D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeltzerApp;
+			packageProductDependencies = (
+				638F28D02A340A8B00A8333D /* FirebaseFirestore */,
+				638F28D32A340ABF00A8333D /* FirebaseAuth */,
+			);
+			productName = SeltzerApp;
+			productReference = 638F288E2A33A28100A8333D /* SeltzerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		638F289D2A33A28200A8333D /* SeltzerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 638F28B52A33A28200A8333D /* Build configuration list for PBXNativeTarget "SeltzerAppTests" */;
+			buildPhases = (
+				638F289A2A33A28200A8333D /* Sources */,
+				638F289B2A33A28200A8333D /* Frameworks */,
+				638F289C2A33A28200A8333D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				638F28A02A33A28200A8333D /* PBXTargetDependency */,
+			);
+			name = SeltzerAppTests;
+			productName = SeltzerAppTests;
+			productReference = 638F289E2A33A28200A8333D /* SeltzerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		638F28A72A33A28200A8333D /* SeltzerAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 638F28B82A33A28200A8333D /* Build configuration list for PBXNativeTarget "SeltzerAppUITests" */;
+			buildPhases = (
+				638F28A42A33A28200A8333D /* Sources */,
+				638F28A52A33A28200A8333D /* Frameworks */,
+				638F28A62A33A28200A8333D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				638F28AA2A33A28200A8333D /* PBXTargetDependency */,
+			);
+			name = SeltzerAppUITests;
+			productName = SeltzerAppUITests;
+			productReference = 638F28A82A33A28200A8333D /* SeltzerAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		638F28862A33A28100A8333D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					638F288D2A33A28100A8333D = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					638F289D2A33A28200A8333D = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 638F288D2A33A28100A8333D;
+					};
+					638F28A72A33A28200A8333D = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 638F288D2A33A28100A8333D;
+					};
+				};
+			};
+			buildConfigurationList = 638F28892A33A28100A8333D /* Build configuration list for PBXProject "SeltzerApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 638F28852A33A28100A8333D;
+			packageReferences = (
+				638F28CF2A340A8B00A8333D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 638F288F2A33A28100A8333D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				638F288D2A33A28100A8333D /* SeltzerApp */,
+				638F289D2A33A28200A8333D /* SeltzerAppTests */,
+				638F28A72A33A28200A8333D /* SeltzerAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		638F288C2A33A28100A8333D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638F28CA2A33A75600A8333D /* data.json in Resources */,
+				638F28D62A340B3400A8333D /* GoogleService-Info.plist in Resources */,
+				638F28992A33A28200A8333D /* Preview Assets.xcassets in Resources */,
+				638F28962A33A28200A8333D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638F289C2A33A28200A8333D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638F28A62A33A28200A8333D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		638F288A2A33A28100A8333D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638F28942A33A28100A8333D /* RatingView.swift in Sources */,
+				638F28922A33A28100A8333D /* SeltzerApp.swift in Sources */,
+				638F28C32A33A3CD00A8333D /* UserModel.swift in Sources */,
+				638F28DA2A356F0F00A8333D /* SliderView.swift in Sources */,
+				638F28C72A33A46B00A8333D /* LoginView.swift in Sources */,
+				638F28C12A33A3B900A8333D /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638F289A2A33A28200A8333D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638F28A32A33A28200A8333D /* SeltzerAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638F28A42A33A28200A8333D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638F28AF2A33A28200A8333D /* SeltzerAppUITestsLaunchTests.swift in Sources */,
+				638F28AD2A33A28200A8333D /* SeltzerAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		638F28A02A33A28200A8333D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 638F288D2A33A28100A8333D /* SeltzerApp */;
+			targetProxy = 638F289F2A33A28200A8333D /* PBXContainerItemProxy */;
+		};
+		638F28AA2A33A28200A8333D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 638F288D2A33A28100A8333D /* SeltzerApp */;
+			targetProxy = 638F28A92A33A28200A8333D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		638F28B02A33A28200A8333D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		638F28B12A33A28200A8333D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		638F28B32A33A28200A8333D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SeltzerApp/Preview Content\"";
+				DEVELOPMENT_TEAM = D7WBU86XGJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mitchXsandOs.SeltzerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		638F28B42A33A28200A8333D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SeltzerApp/Preview Content\"";
+				DEVELOPMENT_TEAM = D7WBU86XGJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mitchXsandOs.SeltzerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		638F28B62A33A28200A8333D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D7WBU86XGJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mitchXsandOs.SeltzerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeltzerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SeltzerApp";
+			};
+			name = Debug;
+		};
+		638F28B72A33A28200A8333D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D7WBU86XGJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mitchXsandOs.SeltzerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeltzerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SeltzerApp";
+			};
+			name = Release;
+		};
+		638F28B92A33A28200A8333D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D7WBU86XGJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mitchXsandOs.SeltzerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SeltzerApp;
+			};
+			name = Debug;
+		};
+		638F28BA2A33A28200A8333D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D7WBU86XGJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mitchXsandOs.SeltzerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SeltzerApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		638F28892A33A28100A8333D /* Build configuration list for PBXProject "SeltzerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638F28B02A33A28200A8333D /* Debug */,
+				638F28B12A33A28200A8333D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		638F28B22A33A28200A8333D /* Build configuration list for PBXNativeTarget "SeltzerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638F28B32A33A28200A8333D /* Debug */,
+				638F28B42A33A28200A8333D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		638F28B52A33A28200A8333D /* Build configuration list for PBXNativeTarget "SeltzerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638F28B62A33A28200A8333D /* Debug */,
+				638F28B72A33A28200A8333D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		638F28B82A33A28200A8333D /* Build configuration list for PBXNativeTarget "SeltzerAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638F28B92A33A28200A8333D /* Debug */,
+				638F28BA2A33A28200A8333D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		638F28CF2A340A8B00A8333D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		638F28D02A340A8B00A8333D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 638F28CF2A340A8B00A8333D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		638F28D32A340ABF00A8333D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 638F28CF2A340A8B00A8333D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 638F28862A33A28100A8333D /* Project object */;
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Mitch",
+    "id": 0,
+    "seltzers": [
+      {
+        "brand": "White Claw",
+        "flavor": "Natural Lime",
+        "image": "WhiteClawNaturalLime",
+        "userScore": 0.0,
+        "globalScore": 0.0,
+        "scored": false
+      },
+      {
+        "brand": "White Claw",
+        "flavor": "Black Cherry",
+        "image": "WhiteClawBlackCherry",
+        "userScore": 0.0,
+        "globalScore": 0.0,
+        "scored": false
+      },
+      {
+        "brand": "White Claw",
+        "flavor": "Mango",
+        "image": "WhiteClawMango",
+        "userScore": 0.0,
+        "globalScore": 0.0,
+        "scored": false
+      },
+      {
+        "brand": "White Claw",
+        "flavor": "Ruby Grapefruit",
+        "image": "WhiteClawRubyGrapefruit",
+        "userScore": 0.0,
+        "globalScore": 0.0,
+        "scored": false
+      },
+      {
+        "brand": "White Claw",
+        "flavor": "Raspberry",
+        "image": "WhiteClawRaspberry",
+        "userScore": 0.0,
+        "globalScore": 0.0,
+        "scored": false
+      },
+      {
+        "brand": "White Claw",
+        "flavor": "Watermelon",
+        "image": "WhiteClawWatermelon",
+        "userScore": 0.0,
+        "globalScore": 0.0,
+        "scored": false
+      },
+      {
+        "brand": "White Claw",
+        "flavor": "Tangerine",
+        "image": "WhiteClawTangerine",
+        "userScore": 0.0,
+        "globalScore": 0.0,
+        "scored": false
+      },
+      {
+        "brand": "White Claw",
+        "flavor": "Lemon",
+        "image": "WhiteClawLemon",
+        "userScore": 0.0,
+        "globalScore": 0.0,
+        "scored": false
+      },
+      {
+        "brand": "White Claw",
+        "flavor": "Pineapple",
+        "image": "WhiteClawPineapple",
+        "userScore": 0.0,
+        "globalScore": 0.0,
+        "scored": false
+      },
+      {
+        "brand": "White Claw",
+        "flavor": "Strawberry",
+        "image": "WhiteClawStrawberry",
+        "userScore": 0.0,
+        "globalScore": 0.0,
+        "scored": false
+      }
+    ]
+  }
+]
